@@ -13,7 +13,7 @@ from .main import app
 from .user import User, get_user
 
 try:
-	with open("src/usersdb.json", 'r') as f:
+	with open("usersdb.json", 'r') as f:
 		fake_users_db = json.load(f)
 except Exception as e:
 	print(e)
